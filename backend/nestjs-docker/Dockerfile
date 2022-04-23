@@ -10,7 +10,7 @@ COPY package.json package-lock.json ./
 # RUN yarn install --non-interactive --frozen-lockfile
 RUN npm ci
 
-COPY .. .
+COPY . .
 
 # RUN yarn build
 RUN npm run build
